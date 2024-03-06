@@ -33,6 +33,7 @@ class etcd::params {
   $election_timeout = 1000
   $listen_client_urls = ['http://localhost:2379', 'http://localhost:4001']
   $advertise_client_urls = ['http://localhost:2379', 'http://localhost:4001']
+  $listen_metrics_urls = ['http://0.0.0.0:2385']
   $max_snapshots = 5
   $max_wals = 5
   $cors = undef

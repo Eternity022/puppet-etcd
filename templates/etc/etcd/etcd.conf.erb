@@ -11,6 +11,7 @@ ETCD_HEARTBEAT_INTERVAL=<%= scope['etcd::heartbeat_interval'] %>
 ETCD_ELECTION_TIMEOUT=<%= scope['etcd::election_timeout'] %>
 ETCD_QUOTA_BACKEND_BYTES=<%= scope['etcd::quota_backend_bytes'] %>
 ETCD_LISTEN_CLIENT_URLS="<%= Array(scope['etcd::listen_client_urls']).join(',') %>"
+ETCD_LISTEN_METRICS_URLS="<%= Array(scope['etcd::listen_metrics_urls']).join(',') %>"
 ETCD_ADVERTISE_CLIENT_URLS="<%= Array(scope['etcd::advertise_client_urls']).join(',') %>"
 ETCD_MAX_SNAPSHOTS=<%= scope['etcd::max_snapshots'] %>
 ETCD_MAX_WALS=<%= scope['etcd::max_wals'] %>

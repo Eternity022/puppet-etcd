@@ -249,6 +249,7 @@ class etcd (
   $quota_backend_bytes         = $etcd::params::quota_backend_bytes,
   $listen_client_urls          = $etcd::params::listen_client_urls,
   $advertise_client_urls       = $etcd::params::advertise_client_urls,
+  $listen_metrics_urls         = $etcd::params::listen_metrics_urls,
   $max_snapshots               = $etcd::params::max_snapshots,
   $max_wals                    = $etcd::params::max_wals,
   $cors                        = $etcd::params::cors,
